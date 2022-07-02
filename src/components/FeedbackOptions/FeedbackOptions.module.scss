@@ -1,0 +1,19 @@
+.feed_back__btn {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:active {
+    // background-color: #4594fd;
+    background: linear-gradient(#4594fd, #0767e5);
+  }
+}
