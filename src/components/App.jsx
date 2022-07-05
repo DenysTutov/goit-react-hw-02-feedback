@@ -7,7 +7,7 @@ import { Notification } from './Notification/Notification';
 class App extends React.Component {
   state = { good: 0, neutral: 0, bad: 0 };
 
-  onLeaveFeedback = event => {
+  handleLeaveFeedback = event => {
     const eventNameBtn = event.target.name;
 
     this.setState(prevState => ({
@@ -41,7 +41,7 @@ class App extends React.Component {
                 <FeedBackOptions
                   key={option}
                   option={option}
-                  onLeaveFeedback={this.onLeaveFeedback}
+                  onLeaveFeedback={this.handleLeaveFeedback}
                 />
               );
             })}
