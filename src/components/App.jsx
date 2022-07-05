@@ -35,17 +35,10 @@ class App extends Component {
     return (
       <>
         <Section title="Please leave feedback">
-          <div>
-            {options.map(option => {
-              return (
-                <FeedBackOptions
-                  key={option}
-                  option={option}
-                  onLeaveFeedback={this.handleLeaveFeedback}
-                />
-              );
-            })}
-          </div>
+          <FeedBackOptions
+            options={options}
+            onLeaveFeedback={this.handleLeaveFeedback}
+          />
         </Section>
 
         {total > 0 ? (
